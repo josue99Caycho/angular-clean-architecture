@@ -5,7 +5,12 @@ import { UserModelRequest, UserModelResponse } from 'src/app/domain/models/user.
 import { UserRepository } from '../../domain/repository/user/user.repository';
 
 import { environment } from '../../../environments/environment';
+import { Injectable } from '@angular/core';
 
+
+@Injectable({
+  providedIn: 'root'
+})
 export class userImplementation implements UserRepository {
 
   private URL = environment.user;
