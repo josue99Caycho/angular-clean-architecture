@@ -18,6 +18,8 @@ body {
   box-sizing: border-box;;
 }
 
-.center-content {
-  @apply flex justify-center;
+@layer components { 
+  .center-content {
+    @apply flex justify-center;
+  }
 }
