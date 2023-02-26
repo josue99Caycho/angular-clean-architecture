@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SidebarComponent } from './components/sidebar.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'user',
-    pathMatch: 'full'
-  },
-  {
-    path: 'user',
-    loadChildren: () => import('./user/user.module').then(module => module.UserModule)
+    component: SidebarComponent
   }
 ];
 
@@ -17,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PagesRoutingModule { }
+export class SidebarRoutingModule { }

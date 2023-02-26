@@ -9,11 +9,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: ()=> import('./presentation/login/login.module').then(module => module.LoginModule)
+    loadChildren: () => import('./presentation/login/login.module').then(module => module.LoginModule)
   },
   {
-    path: 'user',
-    loadChildren: () => import('./presentation/pages/user/user.module').then(module => module.UserModule)
+    path: 'menu',
+    loadChildren: () => import('./presentation/shared/shared.module').then(module => module.SharedModule)
   }
 ];
 
