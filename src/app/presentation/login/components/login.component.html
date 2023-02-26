@@ -1,22 +1,22 @@
 
-<div class="login">
-  <mat-card class="container">
+<div class="login md:w-full md:h-full h-full center-content place-items-center">
+  <mat-card class="md:w-2/6 w-10/12 md:h-auto h-auto md:p-5">
 
     <!-- Título -->
-    <mat-card-header>
-      <mat-card-title>Login</mat-card-title>
+    <mat-card-header class="center-content place-items-center">
+      <mat-card-title class="md:pb-4">Login</mat-card-title>
     </mat-card-header>
 
     <!-- Inputs -->
     <mat-card-content>
 
-      <form class="example-form">
-        <mat-form-field class="example-full-width">
+      <form class=" md:w-auto center-content place-items-center flex-col">
+        <mat-form-field class="md:w-full w-full">
           <mat-label>Usuario</mat-label>
           <input matInput placeholder="Ingresa tu usuario">
         </mat-form-field>
       
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="md:w-full w-full">
           <mat-label>Contraseña</mat-label>
           <input type="password" matInput placeholder="Ingresa tu contraseña">
         </mat-form-field>
@@ -24,9 +24,9 @@
 
     </mat-card-content>
 
-    <!-- Login -->
-    <div class="button-login">
-      <button class="col-md-8" mat-raised-button color="primary" (click)="login()">Ingresar</button>
+    <!-- Botón Login -->
+    <div class="center-content md:py-2">
+      <button class="md:w-2/4 md:bg-slate-800 md:text-gray-50" mat-raised-button color="primary" (click)="login()">Ingresar</button>
     </div>
   </mat-card>
 </div>
