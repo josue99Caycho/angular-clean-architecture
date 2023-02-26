@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   isOpened: boolean = false;
+
+  redirectChildrenUser(){
+    this.router.navigate(['menu/user']);
+  }
 }

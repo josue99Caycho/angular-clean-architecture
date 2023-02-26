@@ -5,7 +5,13 @@ import { SidebarComponent } from './components/sidebar.component';
 const routes: Routes = [
   {
     path: '',
-    component: SidebarComponent
+    component: SidebarComponent,
+    children: [
+      {
+        path: 'user',
+        loadChildren: () => import('../../../pages/user/user.module').then(module => module.UserModule)
+      }
+    ]
   }
 ];
 

@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    loadChildren: () => import('./presentation/shared/shared.module').then(module => module.SharedModule)
+    loadChildren: () => import('./presentation/shared/shared.module').then(module => module.SharedModule),
   }
 ];
 

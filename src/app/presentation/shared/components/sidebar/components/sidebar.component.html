@@ -1,7 +1,41 @@
 <app-menu [opened]="true"></app-menu>
 
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" [opened]="true"></mat-drawer>
+  <mat-drawer mode="side" [opened]="true">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Mantenimiento</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list role="list">
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong>Usuarios</strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list role="list" hideToggle>
+            <mat-list-item class="mat-elevation-z1" role="listitem" (click)="redirectChildrenUser()">Gestión</mat-list-item>
+            <mat-list-item class="mat-elevation-z1" role="listitem">Reporte</mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+      </mat-list>
+      <mat-list role="list">
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong>Listado de Entidades</strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list role="list" hideToggle>
+            <mat-list-item class="mat-elevation-z1" role="listitem">Gestión</mat-list-item>
+            <mat-list-item class="mat-elevation-z1" role="listitem">Reporte</mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-drawer>
   <mat-drawer-content>
     <router-outlet></router-outlet>
   </mat-drawer-content>
