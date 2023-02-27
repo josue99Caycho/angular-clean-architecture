@@ -1,7 +1,45 @@
-<p>Filtro de combos</p>
+<div class="md:w-full w-full md:h-full h-full md:m-5 center-content">
 
-<p>busqueda por valor</p>
+  <!-- Filtros -->
+  <mat-card class="md:w-10/12 md:h-1/6 h-1/6 md:p-5 p-5 flex center-content flex-col">
 
-<p>tabla con listado de usuarios</p>
+    <div class="gap-8 columns-3 center-content">
+      <div class="md:w-3/12 md:mx-5 md:h-auto h-auto">
+        <mat-form-field>
+          <mat-label>Fecha Inicio</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
 
-<p>paginado</p>
+      <div class="md:w-3/12 md:mx-5 md:h-auto h-auto">
+        <mat-form-field>
+          <mat-label>Fecha Fin</mat-label>
+          <input matInput [matDatepicker]="picker2">
+          <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="md:w-3/12 md:mx-5 md:h-auto h-auto">
+        <mat-form-field appearance="fill">
+          <mat-label>Estado</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- Botón Login -->
+    <div class="column-1 flex justify-center">
+      <div class="md:w-3/12 center-content md:py-2">
+        <button class="md:w-full md:bg-slate-800 md:text-gray-50" mat-raised-button color="primary">Buscar</button>
+      </div>
+    </div>
+  </mat-card>
+
+</div>

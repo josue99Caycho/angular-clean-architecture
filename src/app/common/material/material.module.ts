@@ -14,6 +14,10 @@ import { CommonModule } from '@angular/common';
  import { MatSliderModule } from '@angular/material/slider';
  import { MatExpansionModule } from '@angular/material/expansion';
  import { MatListModule } from '@angular/material/list';
+ import { MatDatepickerModule } from '@angular/material/datepicker';
+ import { MatSelectModule } from '@angular/material/select';
+ import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+
 
  const components = [
   MatSidenavModule,
@@ -25,7 +29,11 @@ import { CommonModule } from '@angular/common';
   MatInputModule,
   MatSliderModule,
   MatExpansionModule,
-  MatListModule
+  MatListModule,
+  MatDatepickerModule,
+  MatSelectModule,
+  MatNativeDateModule,
+  MatRippleModule
  ]
 
 @NgModule({

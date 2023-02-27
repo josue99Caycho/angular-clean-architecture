@@ -5,6 +5,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './components/create/create.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { MaterialModule } from '../../../common/material/material.module'
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { DetailComponent } from './components/detail/detail.component';
   ],
   imports: [
     CommonModule,
+    MaterialModule,
     UserRoutingModule
   ]
 })

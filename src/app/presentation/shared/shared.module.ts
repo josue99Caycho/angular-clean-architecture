@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from './components/material/material.module';
+import { MaterialModule } from '../../common/material/material.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { SharedRoutingModule } from './shared-routing.module';
