@@ -17,7 +17,8 @@ import { CommonModule } from '@angular/common';
  import { MatDatepickerModule } from '@angular/material/datepicker';
  import { MatSelectModule } from '@angular/material/select';
  import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
-
+ import { MatTableModule } from '@angular/material/table';
+ import { MatPaginatorModule } from '@angular/material/paginator';
 
  const components = [
   MatSidenavModule,
@@ -33,14 +34,16 @@ import { CommonModule } from '@angular/common';
   MatDatepickerModule,
   MatSelectModule,
   MatNativeDateModule,
-  MatRippleModule
+  MatRippleModule,
+  MatTableModule,
+  MatPaginatorModule
  ]
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    components
+    components,
   ],
   exports: [
     components

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  user: 'http://localhost:5070/user/'
 };

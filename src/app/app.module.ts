@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataModule } from './data/data.module';
 import { SharedModule } from './presentation/shared/shared.module';
+import { DomainModule } from './domain/domain.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SharedModule } from './presentation/shared/shared.module';
     AppRoutingModule,
     DataModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    DomainModule,
+    HttpClientModule
   ],
   providers: [
   ],

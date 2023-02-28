@@ -16,7 +16,8 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-list role="list" hideToggle>
-            <mat-list-item class="mat-elevation-z1" role="listitem" (click)="redirectChildrenUser()">Gestión</mat-list-item>
+            <mat-list-item class="mat-elevation-z1" role="listitem" (click)="redirectChildrenUser()">Gestión
+            </mat-list-item>
             <mat-list-item class="mat-elevation-z1" role="listitem">Reporte</mat-list-item>
           </mat-list>
         </mat-expansion-panel>
@@ -36,7 +37,9 @@
       </mat-list>
     </mat-expansion-panel>
   </mat-drawer>
+
   <mat-drawer-content>
     <router-outlet></router-outlet>
   </mat-drawer-content>
+
 </mat-drawer-container>

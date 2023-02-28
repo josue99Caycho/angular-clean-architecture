@@ -4,5 +4,5 @@
 
 export const environment = {
   production: false,
-  user: 'http://5070:/api/user'
+  user: 'http://localhost:5070/user/'
 };
